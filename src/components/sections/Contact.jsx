@@ -40,18 +40,53 @@ export default function Contact() {
     return Object.keys(newErrors).length === 0
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (!validate()) return
+const handleSubmit = async (e) => {
+  e.preventDefault()
 
-    setSending(true)
-    setTimeout(() => {
-      setSending(false)
-      setSubmitted(true)
-      setForm({ name: '', email: '', subject: '', message: '' })
-      setTimeout(() => setSubmitted(false), 5000)
-    }, 1500)
+  if (!validate()) return
+
+  setSending(true)
+
+  const formData = {
+    access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+    name: form.name,
+    email: form.email,
+    subject: form.subject,
+    message: form.message,
   }
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+
+    const result = await response.json()
+
+    if (result.success) {
+      setSubmitted(true)
+      setForm({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      })
+
+      setTimeout(() => setSubmitted(false), 5000)
+    } else {
+      alert("Failed to send message.")
+    }
+  } catch (error) {
+    alert("Something went wrong. Please try again.")
+    console.error(error)
+  }
+
+  setSending(false)
+}
 
   const handleChange = (e) => {
     const { name, value } = e.target
