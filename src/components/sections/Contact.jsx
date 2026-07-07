@@ -47,6 +47,8 @@ const handleSubmit = async (e) => {
 
   setSending(true)
 
+  console.log("Access Key:", import.meta.env.VITE_WEB3FORMS_KEY)
+
   const formData = {
     access_key: import.meta.env.VITE_WEB3FORMS_KEY,
     name: form.name,
@@ -67,8 +69,11 @@ const handleSubmit = async (e) => {
 
     const result = await response.json()
 
+    console.log(result)
+
     if (result.success) {
       setSubmitted(true)
+
       setForm({
         name: "",
         email: "",
@@ -78,16 +83,16 @@ const handleSubmit = async (e) => {
 
       setTimeout(() => setSubmitted(false), 5000)
     } else {
-      alert("Failed to send message.")
+      alert(result.message)
+      console.log(result)
     }
   } catch (error) {
-    alert("Something went wrong. Please try again.")
     console.error(error)
+    alert("Something went wrong.")
   }
 
   setSending(false)
 }
-
   const handleChange = (e) => {
     const { name, value } = e.target
     setForm((prev) => ({ ...prev, [name]: value }))

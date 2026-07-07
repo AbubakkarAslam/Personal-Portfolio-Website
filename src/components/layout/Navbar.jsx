@@ -11,7 +11,6 @@ import Button from '../ui/Button'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  console.log(navLinks); // <-- Add it here
   const [scrolled, setScrolled] = useState(false)
   const { direction, scrollY } = useScrollDirection()
   const activeSection = useActiveSection(navLinks.map((l) => l.id))
