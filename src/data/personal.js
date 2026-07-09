@@ -9,7 +9,7 @@ export const personalInfo = {
   github: 'https://github.com/AbuBakarAslam',
   linkedin: 'www.linkedin.com/in/m-abu-bakkar-aslam-505514235',
   kaggle: 'https://www.kaggle.com/mabubakkaraslam',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: '/Abubakar.pdf',
   intro:
     'I build intelligent AI solutions, machine learning models.',
   aboutText: `BSIT Graduate and aspiring Machine Learning Engineer with hands-on experience in Python, Scikit-learn, and data preprocessing. Skilled in building, optimizing, and evaluating machine learning models using regression, classification, ensemble methods, hyperparameter tuning, cross-validation, and ML pipelines. Passionate about solving real-world problems through data-driven solutions.

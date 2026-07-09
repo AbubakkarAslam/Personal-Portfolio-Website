@@ -47,8 +47,6 @@ const handleSubmit = async (e) => {
 
   setSending(true)
 
-  console.log("Access Key:", import.meta.env.VITE_WEB3FORMS_KEY)
-
   const formData = {
     access_key: import.meta.env.VITE_WEB3FORMS_KEY,
     name: form.name,
