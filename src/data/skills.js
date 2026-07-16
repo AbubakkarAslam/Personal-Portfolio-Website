@@ -13,9 +13,10 @@ export const skillCategories = [
       { name: 'Scikit-learn', level: 85 },
       { name: 'Pandas', level: 80 },
       { name: 'NumPy', level: 80 },
-      { name: 'TensorFlow', level: 65 },
-      { name: 'PyTorch', level: 60 },
-      { name: 'OpenCV', level: 70 },
+      { name: 'Matplotlibt', level: 70}
+      // { name: 'TensorFlow', level: 65 },
+      // { name: 'PyTorch', level: 60 },
+      // { name: 'OpenCV', level: 70 },
     ],
   },
   {

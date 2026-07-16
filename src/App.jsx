@@ -13,7 +13,7 @@ import Hero from './components/sections/Hero'
 const About = lazy(() => import('./components/sections/About'))
 const Services = lazy(() => import('./components/sections/Services'))
 const Skills = lazy(() => import('./components/sections/Skills'))
-const Projects = lazy(() => import('./components/sections/Projects'))
+// const Projects = lazy(() => import('./components/sections/Projects'))
 const Experience = lazy(() => import('./components/sections/Experience'))
 const Contact = lazy(() => import('./components/sections/Contact'))
 
@@ -47,7 +47,7 @@ export default function App() {
         <About />
         <Services />
         <Skills />
-        <Projects />
+        {/* <Projects /> */}
         <Experience />
         <Contact />
       </Suspense>

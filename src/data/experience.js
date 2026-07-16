@@ -11,12 +11,12 @@ export const experience = [
     description:
       'Dived deep into AI/ML fundamentals, exploring neural networks, deep learning, and data science methodologies.',
   },
-  {
-    year: '2026',
-    title: 'Built Multiple Machine Learning Projects',
-    description:
-      'Developed diverse ML projects spanning classification, regression, NLP, and computer vision with production-ready models.',
-  },
+  // {
+  //   year: '2026',
+  //   title: 'Built Multiple Machine Learning Projects',
+  //   description:
+  //     'Developed diverse ML projects spanning classification, regression, NLP, and computer vision with production-ready models.',
+  // },
   {
     year: '2026',
     title: 'Open for Internship & Full-Time Opportunities',
