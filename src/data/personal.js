@@ -7,7 +7,7 @@ export const personalInfo = {
   phone: '+92 309 2236124',
   location: 'Pakistan',
   github: 'https://github.com/AbuBakarAslam',
-  linkedin: 'www.linkedin.com/in/m-abu-bakkar-aslam-505514235',
+  linkedin: 'https://www.linkedin.com/in/muhammad-abu-bakkar-aslam/',
   kaggle: 'https://www.kaggle.com/mabubakkaraslam',
   resumeUrl: '/Abu bakkar CV.pdf',
   intro:
