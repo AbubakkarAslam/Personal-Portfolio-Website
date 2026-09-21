@@ -23,6 +23,12 @@ export const services = [
       'End-to-end ML pipelines including data preprocessing, model training, evaluation, and deployment at scale.',
   },
   {
+  icon: FaBrain,
+  title: 'Deep Learning',
+  description:
+    'Develop neural networks using TensorFlow and Keras, including ANN, CNN, and RNN models for computer vision, text classification, and sequential data.'
+  },
+  {
     icon: FaChartBar,
     title: 'Data Analysis',
     description:
@@ -34,12 +40,12 @@ export const services = [
     description:
       'Build predictive models that forecast trends, behaviors, and outcomes to drive informed decision-making.',
   },
-  // {
-  //   icon: FaEye,
-  //   title: 'Computer Vision',
-  //   description:
-  //     'Develop image recognition, object detection, and visual analysis systems using state-of-the-art CV techniques.',
-  // },
+  {
+    icon: FaEye,
+    title: 'Computer Vision',
+    description:
+      'Develop image recognition, object detection, and visual analysis systems using state-of-the-art CV techniques.',
+  },
   // {
   //   icon: FaPython,
   //   title: 'Python Automation',

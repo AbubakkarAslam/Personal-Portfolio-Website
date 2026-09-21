@@ -27,7 +27,8 @@ export const skillCategories = [
       { name: 'Git', level: 90 },
       { name: 'GitHub', level: 92 },
       { name: 'VS Code', level: 95 },
-      { name: 'Jupyter', level: 88 },
+      { name: 'Jupyter', level: 95 },
+      { name: 'Google Colab', level: 90 }
     ],
   },
 ]
